@@ -1,5 +1,13 @@
-﻿body {
-    padding-top: 50px;
+﻿* {
+    margin: 0;
+    padding: 0;
+   -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 0px;
     padding-bottom: 20px;
 }
 
@@ -21,4 +29,49 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.container {
+    position: absolute;
+        z-index: 100;
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.navbar-inverse .navbar-nav {
+    margin-left: 50px;
+
+}
+
+canvas {
+     clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+   
+}
+.navbar-inverse .navbar-nav > li > a{
+    font-size: 30px;
+    color: white;
+}
+.navbar-inverse .navbar-nav > li {
+    border: solid 1px transparent;
+}
+
+.navbar-inverse .navbar-nav > li:hover {
+    border: solid 1px white;
+}
+.navbar-inverse .navbar-nav > li {
+    margin-right: 20px;
+  display: inline-block;
+    position: relative;
+}
+
+.navbar-inverse {
+    background: url(/Content/img/bckg.jpg)!important;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    background-position: top;
+    height: 600px;
+    clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+
 }
